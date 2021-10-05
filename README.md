@@ -1,1 +1,0 @@
-I thought the concept of using logarithms to transform power relationships into linear relationships was pretty cool, so I decided to make my own power regression calculator. Thanks, AP Stats.
