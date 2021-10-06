@@ -1,1 +1,2 @@
-I thought the concept of using logarithms to transform power relationships into linear relationships was pretty cool, so I decided to make my own power regression calculator. Thanks, AP Stats.
+I thought the concept of using logarithms to transform power relationships into linear relationships was pretty cool, so I decided to make my own power regression calculator from scratch (sort of). Thanks, AP Stats.
+Currently works for y = ax^b, not y = ax^b + c where c != 0
