@@ -1,9 +1,8 @@
-import csv
 from math import log, e
 import matplotlib.pyplot as plt
 
 # Only works for y=ax^b, not y=ax^b + c
-class Regression:
+class PowerRegression:
     def __init__(self, x_values, y_values):
         self.x_values = x_values
         self.y_values = y_values
@@ -26,12 +25,3 @@ class Regression:
 
     def __str__(self):
         return f'Regression line: ln(y) = {self.b} + {self.m}*ln(x)'
-
-with open('data.csv') as f:
-    reader = csv.reader(f)
-    next(reader)
-    data = [(float(row[0]), float(row[1])) for row in reader]
-    regression_model = Regression([pair[0] for pair in data], [pair[1] for pair in data])
-    print(regression_model) # prints the regression line equation
-    print(regression_model.predict_y(130)) # prints the expected y value at x=130
-    regression_model.show_scatter() # shows a scatter plot of the original data set (pass True as an argument to get transformed data set)
